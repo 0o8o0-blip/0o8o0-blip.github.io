@@ -1,0 +1,12 @@
+title: Blip
+description: Notes from the bench.
+author: your-name-here
+url: "https://0o8o0-blip.github.io"
+
+theme: minima
+permalink: /posts/:slug/
+
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
