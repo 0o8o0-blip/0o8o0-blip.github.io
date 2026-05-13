@@ -11,8 +11,8 @@ image: /assets/figures/fig7_camera_frames_clean_vs_collapse.png
 
 ### Intro 
 
-So last week I published (auto_soarm)[https://github.com/0o8o0-blip/auto_soarm] and auto research loop using the soarm101 and a tablet for feedback on robot tasks. It has a few simples games at teh moment. 
-The main one is just tap a circle. Over the last week I let agents explore the ACT robustness pertubaions. I mostly left the agent alot this week. Other than the occasional "you are doing great keep going".
+So last week I published [auto_soarm](https://github.com/0o8o0-blip/auto_soarm), an auto research loop using the soarm101 and a tablet for feedback on robot tasks. It has a few simple games at the moment. 
+The main one is just tap a circle. Over the last week I let agents explore the ACT robustness perturbations. I mostly left the agent alone this week, other than the occasional "you are doing great keep going".
 
 Three perturbation axes, evaluated independently and combined:
 
@@ -62,7 +62,7 @@ once the ambient drifts past the latest band it's seen, it falls off. A third ba
 There's also a counterintuitive finding: a noisy four-band merge — one that pulled in two late-afternoon collects with ~25-30% reject rate in the source data — actually overfit and *collapsed earlier* than the two-band morning+dawn baseline. 
 Adding more data doesn't help if the added data is noisier than what's already there.
 
-### Why is Pose pertubation harder than lighting?
+### Why is Pose perturbation harder than lighting?
 
 Pose perturbation is harder because **pan/lift/wf aren't just kinematic changes, they're perceptual confounds.** The camera is wrist-mounted. 
 So a different pan doesn't just mean different joint angles — it means the camera sees the tablet at a different angle, with different perspective distortion, different reflections off the screen, 
