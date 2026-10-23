@@ -10,3 +10,10 @@ markdown: kramdown
 
 plugins:
   - jekyll-seo-tag
+
+# Links in the header menu
+nav_links:
+  - title: Posts
+    url: /
+  - title: GitHub
+    url: https://github.com/0o8o0-blip
